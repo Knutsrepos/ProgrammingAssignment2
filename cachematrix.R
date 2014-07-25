@@ -1,9 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
-##This function basically works like the example functions makeVector(). The only difference
-##is that we now have a matrix instead of a vector
+##This function basically works like the example functions makeVector(). The only 
+##difference is that we now have a matrix instead of a vector.
 ##Here, setinverse sets the inverse of the matrix and getinverse gets the inverse 
 ##of a matrix from the cache.
 
@@ -22,10 +19,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-## The function cacheSolve is also very similar to the function cachemean.
-## Calculating the mean of a vector it calculates the inverse of a matrix via 
-## the function solve()
+## The function cacheSolve is also very similar to the example function cachemean.
+## Instead of calculating the mean of a vector it calculates the inverse of a matrix 
+## via  the function solve()
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
   if(!is.null(m)) {
